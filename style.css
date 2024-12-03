@@ -1,0 +1,741 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+}
+.navchild{
+    width: 73vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.navicon ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.navicon ul li a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-family: "Cabin", sans-serif;
+    color: #19191a;
+    font-weight: 600;
+}
+.navicon ul li{
+    margin-left: 1vw;
+}
+.navicon{
+    height: 4vh;
+    width: 2vw;
+}
+.navicon ul li i{
+    font-size: 0.90vw;
+     color: #dfa974;
+}
+.icon2 {
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    margin-left: 22vw;
+}
+.icon2 i{
+    margin-left: 1vw;
+    color: #19191a;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icon2 I:hover{
+    color: #dfa974;
+}
+.icon2 button{
+    margin-left: 10vw;
+    height: 8vh;
+    width: 12vw;
+    background-color: #dfa974;
+    border: 1vw solid #dfa974;
+    font-size: 1.1vw;
+    font-family: "Cabin", sans-serif;
+   font-weight: 600;
+   color: white;  
+}
+.navbtun{
+   /* margin-right: 2vw;    */
+}
+.navbtunimg{
+    height: 6vh;
+    width: 3vw;
+}
+.icon2{
+    height: 7vh;
+       
+}
+.icon2 i {
+       font-size: 0.90vw;
+}
+.navbtunimg img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.navbtun {
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    width: 8vw;
+    height: 10vh;
+    background-color: whitesmoke;
+   box-shadow: 0px 0px 8px black;
+   display: none;
+   z-index: 1;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in;
+   transition-delay: 0.2s;
+
+}
+.dropdown ul {
+    list-style-type:none;
+}
+.dropdown ul li{
+    padding-top: 1vw;
+    padding-left: 1vw;
+    font-size: 1.1vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #19191a;
+}
+.navbtun:hover >.dropdown{
+    display: block;
+}
+/* navbar */
+.navbarchild{
+    width: 70vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.navbarchild ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbarchild ul li{
+    margin-left: 4vw;
+}
+.navbarchild ul li a{
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #19191a;
+} 
+.navbarchild ul li i:hover{
+    color: #dfa974;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navbarchild ul li a:hover{
+    border-bottom: 2px solid #dfa974;
+}
+.logo{
+    height: 8vh;
+    width: 7vw;
+    /* border: 1px solid black; */
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+/* bannar */
+.bannarparent{
+    height: 90vh;
+    width: 100%;
+    background-image: url(images/hero-1.jpg);
+    background-size: 100% 100%;
+}
+.bannarchild{
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.bannartext{
+    width: 50vw;
+    height: 65vh;
+    margin-top: 2vw;
+}
+.bannartext h1{
+    font-size:5vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 2vw;
+}
+.bannartext p{
+    font-size:1vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: white;
+    line-height: 1.80vw;
+    margin-top: 2vw;
+}
+.bannartext a{
+    font-size: 1vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.20vw solid #dfa974;
+}
+.bannerform{
+    height: 70vh;
+    width: 22vw;
+    background-color: white;
+    border-radius: 1vw;
+    position: relative;
+    top: 0;
+}
+.bannerform2{
+    height: 62vh;
+    width:  18vw;
+    margin:2vw auto;
+     line-height: 2.5vw;
+    position: absolute;
+    left: 2vw;
+    /* border: 1px solid black; */
+}
+.bannerform2 h1{
+    font-size: 2vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: #19191a;
+}
+.bannerform2 label {
+    font-size: 0.80vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #707079;
+}
+.bannerform2 input{
+    height: 5vh;
+    width: 17vw;
+    color: #dfa974;
+    font-size: 0.80vw;
+}
+.bannerform2 select{
+    height:5vh;
+    width: 17vw;
+    font-size: 0.80vw;
+    font-weight: 600;
+    color: #dfa974;
+}
+.bannerform2 button{
+    height: 5vh;
+    width: 17vw;
+    border: 0.12vw solid #dfa974;
+    border-radius: 0.60vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    color: #dfa974;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bannerform2 button:hover{
+    background-color: #dfa974;
+    color: white;
+}
+/* .about */
+.aboutchild{
+    height:80vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.abouttext h2{
+    font-size: 0.85vw;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: #dfa974;
+    text-align: center;
+    letter-spacing: 0.10vw;
+}
+.abouttext h1{
+    font-size: 2.3vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #19191a;
+    text-align: center;
+    margin-top: 1vw;
+}
+.abouttext p{
+    font-size: 0.85vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #707079;
+    text-align: center;
+    margin-top:1vw;
+}
+.abouttext button{
+    height: 5vh;
+    width: 9vw;
+    margin-top: 1vw;
+   border: none;
+   background-color: white;
+   border-bottom: 0.18vw solid #dfa974;
+   position: absolute;
+   left: 50%;
+   top: 70%;
+   transform: translate(-50% ,-50%);
+   font-size: 0.80vw;
+   font-family: "Cabin", sans-serif;
+   font-weight: 600;
+}
+.abouttext{
+    height: 50vh;
+    width: 39vw;
+    position: relative;
+}
+.aboutimages{
+    height: 50vh;
+    width: 20vw;
+    margin-left: 2vw;
+}
+
+.aboutparent{
+    width: 100%;
+}
+.aboutimages >img{
+    height: 100%;
+    width: 100%;
+}
+.services{
+    height: 20vh;
+    width: 30vw;
+    margin:6vw auto;
+}
+.services h2{
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #dfa974;
+    text-align: center;
+}
+.services h1{
+    font-size: 2vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #19191a;
+    text-align: center;
+    margin-top: 1vw;
+}
+.serviceschild{
+    height: 30vh;
+    width: 20vw;
+   padding-top: 1vw;
+   transition: 0.2s;
+   cursor: pointer;
+
+}
+.serviceschild:hover {
+    background-color: #dfa974;
+    color: white;
+    transition: 1s;
+}
+ .serviceschild >.icon{
+    height: 3vh;
+    width: 2vw;
+    margin:2vw auto;
+}
+
+.serviceschild >.icon i{
+     font-size: 2vw;
+}
+.serviceschild h2{
+    font-size: 1.80vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: #19191a;
+    text-align: center;
+    margin-top: 2vw;
+}
+.serviceschild h2:hover{
+    color: white;
+}
+.serviceschild p:hover{
+    color: white;
+}
+.serviceschild p{
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+    text-align: center;
+    margin-top: 1vw;
+}
+.servicesparent{
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.cardchild{
+    height: 65vh;
+    width: 22vw;
+    position: relative;
+}
+.cardchild img{
+    height: 100%;
+    width: 100%;
+}
+.cardtext{
+    position: absolute;
+    left: 2vw;
+    transition: 1s;
+    cursor: pointer;
+}
+.cardtext:hover{
+    height: 30vw;
+    position: absolute;
+     top: 0;
+}
+.cardtext h1{
+    font-size: 2vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 10vw;
+}
+h2{
+    font-size: 1.60vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: #dfa974;
+    margin-top: 1vw;
+}
+#span {
+    margin-left: 6vw;
+    color: white;
+}
+.cardtext ul li{
+    font-size: 1.30vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: white ;
+    display: none;
+}
+   
+.cardtext{
+    line-height: 2vw;
+    position: absolute;
+    top: 10vw;
+    left: 2vw;
+    overflow: hidden;
+    color: white;
+}
+ .cardtext span{
+    width: 10vw;
+   margin-left: 4vw;
+    float: right; 
+   font-size: 0.90vw;
+   display: none;
+}
+.cardtext  li a{
+    width: 20vw;
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    border-bottom: 0.20vw solid #dfa974;
+    text-decoration: none;
+    letter-spacing: 0.10vw;
+    color: white;
+}
+.cardtext ul{
+    list-style-type: none;
+}
+.cardtext:hover > ul li ,.cardtext span{
+    display: block;
+    cursor: pointer;
+}
+.cardparent {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:3vw auto;
+}
+/* .slider */
+.slider{
+    height: 50vh;
+    width: 40vw;
+    margin:6vw auto;
+    text-align: center;
+    line-height: 1.80vw;
+}
+.slider h1{
+    margin-top: 2vw;
+    font-size: 2vw;
+    font-family: "Cabin", sans-serif;
+    color: #19191a;
+}
+.slider p{
+    font-size: 1.40vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+    margin-top: 1.10vw;
+}
+.slider i{
+    color: #dfa974;
+    margin-top: 2vw;
+}
+.slider span{
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+}
+.sliderimg  img{
+    height: 100%;
+    width: 100%;
+    margin-top: 1vw;
+}
+.sliderimg{
+    height: 10vh;
+    width: 7vw;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.slidericon{
+    height: 9vh;
+    width: 10vw;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.slidericon i{
+    font-size: 0.90vw;
+}
+
+/* blog */
+.blog{
+    text-align: center;
+}
+.blog h1{
+    font-size: 2vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    color: #19191a;
+    margin-top: 1vw; 
+}
+.blogchild{
+    height: 50vh;
+    width: 22vw;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.blogchild img{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.blogtext{
+    height:20vh;
+    width: 15vw;
+    position: absolute;
+    top: 14vw;
+    left: 2vw;
+}
+.blogtext h2{
+    width: 7vw;
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    background-color: #dfa974;
+    color: white;
+    padding-left: 1vw;
+}
+.blogtext h1{
+    font-size: 1.45vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    margin-top: 1vw;
+    color: white;  
+}
+.blogtext p{
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 1vw;
+}
+.blogparent{
+    width: 70vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.blogchild1{
+    height: 49vh;
+    width: 42vw;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.blogchild1 img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.blogchild2{
+    height: 50vh;
+    width: 22vw;
+    position: relative;
+}
+.blogchild2 img{
+    width: 100%;
+    height: 100%;
+}
+.bogo2{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer{
+    width: 100%;
+    height: 50%;
+    background-color: #222736;
+    margin-top: 5vw;
+}
+.footerparent{
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.footerchlid h1{
+    font-size: 2vw;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.footerchlid p{
+    font-size: 1vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+    margin-top: 1vw;
+}
+.icon3{
+    height: 9vh;
+    width: 14vw;
+    margin-top: 1vw;
+}
+.icon3 i{
+    font-size: 0.90vw;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icon3 i:hover{
+    color: #dfa974;
+}
+.footertext h2{
+    font-size: 1.80vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: #dfa974;
+}
+.footertext p{
+    font-size: 1vw;
+    font-family: "Lora", serif;
+    color: #707079;
+    font-weight: 600;
+    margin-top: 1vw;
+    line-height: 1.80vw;
+}
+.footerform h2{
+    font-size: 1.80vw;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    color: #dfa974;
+}
+.footerform p{
+    font-size: 0.90vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+    line-height: 1.90vw;
+}
+.footerform input{
+    height: 5vh;
+    width: 17vw;
+    font-size: 0.90vw;
+    padding-left: 1vw;
+     background-image: url(images/arow.png);
+     background-size: 9%;
+     background-repeat: no-repeat;
+     background-position: right;
+     margin-right: 1vw;
+     outline: none;
+     border: none;
+}
+.footerform ::placeholder {
+   color: #dfa974;
+}
+.footer2{
+    width: 100%;
+    height: 8vh;
+    background-color: #222736;
+}
+.footerend{
+    width: 30vw;
+    margin: auto;
+}
+.footerend p{
+    font-size: 1vw;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #707079;
+}
+.footerend span{
+    color: white;
+}
